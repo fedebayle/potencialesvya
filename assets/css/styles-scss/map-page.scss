@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,8 +7,7 @@
 
 .container-overlay {
 	width: auto;
-	height: auto;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -31,7 +32,6 @@
 		.titulo {
 			text-align: center;
 			font-family: 'Roboto', sans-serif;
-			font-size: 42px;
 		}
 			
 		.objetivo {
