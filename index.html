@@ -33,8 +33,8 @@
 			<h3 class="objetivo">Mapeo continuo de potenciales villas y asentamientos en la República Argentina.</h3>
 			<p class="caracteristicas">El mapa está elaborado a partir de la aplicación de técnicas de machine learning a imágenes satelitales públicas. Dada la alta frecuencia en la generación de imagenes, este mapa puede ser actualizado periódicamente. La metodología está basada en mi <a href="https://drive.google.com/file/d/0ByPgZ6LNcIgGNW05YVNNMDVqOTA/view" target="new">tesis de maestria</a>.</p>
 			<p style="text-align: center;">	
-				<button id="verEnMapa" class="verEnMapa"><i class="fa fa-map-marker mapa-icon" aria-hidden="true"></i> Ingresar al Mapa</button>
-				<button class="verEnMapa" style="margin-top: 10px;"><i class="fa fa-download download-button" aria-hidden="true"></i> <a href="data.geojson" download="datos.geojson">Descargar Datos</a></i></button>
+				<button id="verEnMapa" onclick="ga('send', 'event', 'button', 'click', 'view_map');" class="verEnMapa"><i class="fa fa-map-marker mapa-icon" aria-hidden="true"></i> Ingresar al Mapa</button>
+				<button class="verEnMapa" onclick="ga('send', 'event', 'button', 'click', 'download_data');" style="margin-top: 10px;"><i class="fa fa-download download-button" aria-hidden="true"></i> <a href="data.geojson" download="datos.geojson">Descargar Datos</a></i></button>
 			</p>
 			<p class="contacto">Contacto: Federico Baylé | <a href="https://www.linkedin.com/in/federico-bayle-6363048a/" target="new">Linkedin</a> | <a href="https://twitter.com/federicobayle" target="new">Twitter</a> | fedebayle@gmail.com</p>
 		</div>
@@ -42,11 +42,11 @@
 	<div id="map" class="map-container">
 		<span class="volver" id="volver"><a href="index.html">Pagina Principal</a></span>
 		<ul class="buttons">
-			<li><button id="bsasButton">AMBA</button></li>
-			<li><button id="rosarioButton">Rosario</button></li>
-			<li><button id="cordobaButton">Córdoba</button></li>
-			<li><button id="corrientesButton">Corrientes/Resistencia</button></li>
-			<li><button id="tucumanButton">Tucumán</button></li>
+			<li><button id="bsasButton" onclick="ga('send', 'event', 'button', 'click', 'bs_as_map');">AMBA</button></li>
+			<li><button id="rosarioButton" onclick="ga('send', 'event', 'button', 'click', 'rosario_map');">Rosario</button></li>
+			<li><button id="cordobaButton" onclick="ga('send', 'event', 'button', 'click', 'cordoba_map');">Córdoba</button></li>
+			<li><button id="corrientesButton" onclick="ga('send', 'event', 'button', 'click', 'corrientes_map');">Corrientes/Resistencia</button></li>
+			<li><button id="tucumanButton"onclick="ga('send', 'event', 'button', 'click', 'tucuman_map');">Tucumán</button></li>
 		</ul>
 		<div class="legends">
 			<ul class="legends-list">
