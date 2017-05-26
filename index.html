@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Map Page</title>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/leaflet.css" />
+	<script src="assets/js/leaflet.js"></script>
+	<script src="assets//js/leaflet.ajax.min.js"></script>
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container-overlay" id="container-overlay">
+		<i class="fa fa-times close-icon" id="close-icon" aria-hidden="true"></i>
+		<div class="content">
+			<h1 class="titulo">Mapa de potenciales villas y asentamientos</h1>
+			<h3 class="objetivo">Mapeo continuo de potenciales villas y asentamientos en la Republica Argentina.</h3>
+			<p class="caracteristicas">El mapa esta elaborado a partir de la aplicacion de machine learning a imagenes satelitales disponibles publicamente y software libre. Dada la alta frecuencia en la disponibilidad de imagenes este mapa puede ser actualizado continuamente. Esto esta basado en mi <a href="https://drive.google.com/file/d/0ByPgZ6LNcIgGNW05YVNNMDVqOTA/view" target="new">tesis de maestria</a>.</p>
+			<p style="text-align: center;">	
+				<button id="verEnMapa" class="verEnMapa"><i class="fa fa-map-marker mapa-icon" aria-hidden="true"></i> Ingresar al Mapa</button>
+				<button class="verEnMapa" style="margin-top: 10px;"><i class="fa fa-download download-button" aria-hidden="true"></i> <a href="data.geojson" download="datos.geojson">Descargar Datos</a></i></button>
+			</p>
+			<p class="contacto">Contacto: Federico Baylé | <a href="https://www.linkedin.com/in/federico-bayle-6363048a/" target="new">Linkedin</a> | <a href="https://twitter.com/federicobayle" target="new">Twitter</a> | fedebayle@gmail.com</p>
+		</div>
+	</div>
+	<div id="map" class="map-container">
+		<span class="volver" id="volver"><a href="index.html">Pagina Principal</a></span>
+		<ul class="buttons">
+			<li><button id="bsasButton">AMBA</button></li>
+			<li><button id="rosarioButton">Rosario</button></li>
+			<li><button id="cordobaButton">Córdoba</button></li>
+			<li><button id="corrientesButton">Corrientes/Resistencia</button></li>
+			<li><button id="tucumanButton">Tucumán</button></li>
+		</ul>
+		<div class="legends">
+			<ul class="legends-list">
+				<li style="background-color: #fef0d9; color: black;">0.00 - 0.20</li>
+				<li style="background-color: #fdcc8a; color: black">0.20 - 0.40</li>
+				<li style="background-color: #fc8d59;">0.40 - 0.60</li>
+				<li style="background-color: #e34a33;">0.60 - 0.80</li>
+				<li style="background-color: #b30000;">0.80 - 1.00</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="assets/js/map-functions.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>
