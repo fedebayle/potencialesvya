@@ -12,6 +12,17 @@
 	<script src="assets/js/leaflet.js"></script>
 	<script src="assets//js/leaflet.ajax.min.js"></script>
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-99996075-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 	<div class="container-overlay" id="container-overlay">
@@ -19,7 +30,7 @@
 		<div class="content">
 			<h1 class="titulo">Mapa de potenciales villas y asentamientos</h1>
 			<h3 class="objetivo">Mapeo continuo de potenciales villas y asentamientos en la República Argentina.</h3>
-			<p class="caracteristicas">El mapa está elaborado a partir de la aplicación de técnicas de machine learning a imágenes satelitales disponibles públicamente utilizando solo software libre. Dada la alta frecuencia en la disponibilidad de imagenes este mapa puede ser actualizado continuamente. La metodología está basada en mi <a href="https://drive.google.com/file/d/0ByPgZ6LNcIgGNW05YVNNMDVqOTA/view" target="new">tesis de maestria</a>.</p>
+			<p class="caracteristicas">El mapa está elaborado a partir de la aplicación de técnicas de machine learning a imágenes satelitales públicas. Dada la alta frecuencia en la generación de imagenes, este mapa puede ser actualizado periódicamente. La metodología está basada en mi <a href="https://drive.google.com/file/d/0ByPgZ6LNcIgGNW05YVNNMDVqOTA/view" target="new">tesis de maestria</a>.</p>
 			<p style="text-align: center;">	
 				<button id="verEnMapa" class="verEnMapa"><i class="fa fa-map-marker mapa-icon" aria-hidden="true"></i> Ingresar al Mapa</button>
 				<button class="verEnMapa" style="margin-top: 10px;"><i class="fa fa-download download-button" aria-hidden="true"></i> <a href="data.geojson" download="datos.geojson">Descargar Datos</a></i></button>
