@@ -1,0 +1,14 @@
+@media (max-width: 727px) {
+  .container-overlay .content {
+    padding: 60px 0px; }
+    .container-overlay .content .titulo {
+      font-size: 22px; }
+    .container-overlay .content .objetivo {
+      font-size: 16px;
+      margin-top: 30px; }
+    .container-overlay .content .caracteristicas {
+      font-size: 14px;
+      margin-top: 30px; }
+    .container-overlay .content .contacto {
+      font-size: 12px;
+      margin-top: 45px; } }
