@@ -26,6 +26,8 @@
 
 	.content {
 		width: 70%;
+		height: 100%;
+		box-sizing: border-box;
 		margin: auto;
 		padding: 120px 0px;
 
@@ -102,9 +104,38 @@
 				}
 			}
 		}
+		
+		.loader {
+			display: none;
+			margin: auto;
+			margin-top: 20px;
+			z-index: 1;
+			width: 40px;
+			height: 40px;
+			border: 6px solid #f3f3f3;
+			border-radius: 50%;
+			border-top: 6px solid #3498db;
+			-webkit-animation: spin 2s linear infinite;
+			animation: spin 2s linear infinite;
+
+			&.-show {
+				display: block;
+			}
+
+		}		
+
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
+
+		@keyframes spin {
+		  0% { transform: rotate(0deg); }
+		  100% { transform: rotate(360deg); }
+		}
 
 		.contacto {
-			margin-top: 45px;
+			margin-top: 25px;
 			font-size: 14px;
 			text-align: center;
 			font-family: 'Roboto', sans-serif;
@@ -138,11 +169,7 @@
 		z-index: 2000;
 		top: 0px;
 		cursor: pointer;
-
-		a {
-			color: white;
-			text-decoration: none;
-		}
+		color: white;
 	}
 
 	.buttons {
