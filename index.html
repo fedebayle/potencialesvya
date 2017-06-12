@@ -12,6 +12,7 @@
 	<script src="assets/js/leaflet.js"></script>
 	<script src="assets//js/leaflet.ajax.min.js"></script>
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJuAYxkhq9sbFYw6jcfpHYyTHDvF8eMhY&libraries=places"></script>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,7 +43,6 @@
 	</div>
 	<div id="map" class="map-container">
 		<span class="volver" id="volver">Pagina Principal</span>
-		<div class="loader-botones" id="loader-botones"></div>
 		<ul class="buttons">
 			<li><button id="bsasButton" onclick="ga('send', 'event', 'button', 'click', 'bs_as_map');">AMBA</button></li>
 			<li><button id="rosarioButton" onclick="ga('send', 'event', 'button', 'click', 'rosario_map');">Rosario</button></li>

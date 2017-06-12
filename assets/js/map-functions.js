@@ -13,6 +13,7 @@ var map = L.map('map', {
 	layers: [capaSatelite]
 });
 
+
 var paletteColors = {
 	'FIRST_COLOR': '#fef0d9',
 	'SECOND_COLOR': '#fdcc8a',
@@ -45,28 +46,61 @@ var geoJsonLayer = new L.GeoJSON.AJAX("data.geojson", {
     }
 }).addTo(map);
 
+/*
+var GooglePlacesSearchBox = L.Control.extend({
+  onAdd: function() {
+    var element = document.createElement("input");
+    element.id = "searchBox";
+    return element;
+  }
+});
+
+(new GooglePlacesSearchBox).addTo(map);
+
+var input = document.getElementById("searchBox");
+var searchBox = new google.maps.places.SearchBox(input);
+
+searchBox.addListener('places_changed', function() {
+  var places = searchBox.getPlaces();
+
+  if (places.length == 0) {
+    return "hola";
+  }
+
+  places.forEach(function(place) {
+
+  	var lat = place.geometry.location.lat(),
+  		lang = place.geometry.location.lng();
+
+  	map.setView(new L.LatLng(lat, lang), 11);
+  });
+
+});
+
+*/
+
 (function (){
    _registerEvents();
 }());
 
 function centerLocalizationBuenosAires() {
-	map.panTo(new L.LatLng(-34.614948, -58.439854));
+	map.setView(new L.LatLng(-34.614948, -58.439854), 11);
 }
 
 function centerLocalizationRosario() {
-	map.panTo(new L.LatLng(-32.956605, -60.655932));	
+	map.setView(new L.LatLng(-32.956605, -60.655932), 11);
 }
 
 function centerLocalizationCordoba() {
-	map.panTo(new L.LatLng(-31.407402, -64.189548));
+	map.setView(new L.LatLng(-31.407402, -64.189548), 11);
 }
 
 function centerLocalizationCorrientes() {
-	map.panTo(new L.LatLng(-27.480935, -58.876759));
+	map.setView(new L.LatLng(-27.480935, -58.876759), 11);
 }
 
 function centerLocalizationTucuman() {
-	map.panTo(new L.LatLng(-26.824953, -65.223455));
+	map.setView(new L.LatLng(-26.824953, -65.223455), 11);
 }
 
 
