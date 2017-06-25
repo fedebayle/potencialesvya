@@ -1,5 +1,8 @@
 @media (max-width: 727px) {
 	.container-overlay {
+		position: fixed;
+		overflow: auto;
+		
 		.content {
 			padding: 60px 0px;
 			.titulo {
