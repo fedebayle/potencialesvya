@@ -149,11 +149,12 @@
 	.volver {
 		position: absolute;
 		font-family: 'Roboto', sans-serif;
-		right: 0px;
+		right: 10px;
 		background: #0066ff;
-		padding: 3px;
+		padding: 8px 10px;
+		border-radius: 5px;
 		z-index: 2000;
-		top: 0px;
+		bottom: 26px;
 		cursor: pointer;
 		color: white;
 	}
@@ -196,6 +197,34 @@
 			}
 		}
 	}
+
+	.leaflet-control-container {
+		#searchBox {
+			-webkit-transition: width 0.4s ease-in-out;
+    		transition: width 0.4s ease-in-out;
+    		width: 170px;
+			padding: 8px 10px;
+			border: 1px solid #0066ff;
+			border-radius: 5px;
+			background-color: rgba(255,255,255,0.8);
+			&::-webkit-input-placeholder {
+				color: #0066ff;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			&:focus {
+				width: 250px;
+			}
+		}
+	}
+}
+
+.searchIcon {
+	position: absolute;
+	top: 17px;
+	right: 17px;
+	color: #0066ff;
+	z-index: 2000;
 }
 
 .loader-mapa {

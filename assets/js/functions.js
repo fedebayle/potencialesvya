@@ -27,7 +27,13 @@ function verMapa() {
 		LOADER_MAPA_INSTANCE = true;
 		setTimeout(closePopup, 2000);
 	} else {
-		closePopup();
+		cluosePopup();
+	}
+}
+
+function loadCloseIcon() {
+	if(LOADER_MAPA_INSTANCE) {
+		closeIcon.classList.add("-show-close-icon");
 	}
 }
 
@@ -50,10 +56,4 @@ function showLoaderButton() {
 
 function removeLoaderButton() {
 	loaderBotones.classList.remove("-show-loader");
-}
-
-function loadCloseIcon() {
-	if(LOADER_MAPA_INSTANCE) {
-		closeIcon.classList.add("-show-close-icon");
-	}
 }

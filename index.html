@@ -43,13 +43,13 @@
 	</div>
 	<div id="map" class="map-container">
 		<span class="volver" id="volver">Pagina Principal</span>
-		<ul class="buttons">
+		<!-- ul class="buttons">
 			<li><button id="bsasButton" onclick="ga('send', 'event', 'button', 'click', 'bs_as_map');">AMBA</button></li>
 			<li><button id="rosarioButton" onclick="ga('send', 'event', 'button', 'click', 'rosario_map');">Rosario</button></li>
 			<li><button id="cordobaButton" onclick="ga('send', 'event', 'button', 'click', 'cordoba_map');">Córdoba</button></li>
 			<li><button id="corrientesButton" onclick="ga('send', 'event', 'button', 'click', 'corrientes_map');">Corrientes/Resistencia</button></li>
 			<li><button id="tucumanButton"onclick="ga('send', 'event', 'button', 'click', 'tucuman_map');">Tucumán</button></li>
-		</ul>
+		</ul -->
 		<div class="legends">
 			<ul class="legends-list">
 				<li style="background-color: #fef0d9; color: black;">0.00 - 0.20</li>
@@ -59,7 +59,9 @@
 				<li style="background-color: #b30000;">0.80 - 1.00</li>
 			</ul>
 		</div>
+		<input type="text" class="leaflet-control" placeholder="Buscar en el mapa" id="searchBox">
 	</div>
+	<i class="fa fa-search searchIcon" aria-hidden="true"></i>
 
 	<script src="assets/js/map-functions.js"></script>
 	<script src="assets/js/functions.js"></script>
