@@ -36,15 +36,15 @@ window.onload = function() {
 
   var geoJsonLayer = new L.GeoJSON.AJAX("data.geojson", {
       style: function(feature) {
-          if (feature.properties.prob >= 0 && feature.properties.prob <= 0.20) {
+          if (feature.properties.proba >= 0 && feature.properties.proba <= 0.20) {
               return {color: paletteColors.FIRST_COLOR};
-          } else if (feature.properties.prob >= 0.20 && feature.properties.prob <= 0.40) {
+          } else if (feature.properties.proba >= 0.20 && feature.properties.proba <= 0.40) {
             return {color: paletteColors.SECOND_COLOR};
-          } else if (feature.properties.prob >= 0.40 && feature.properties.prob <= 0.60) {
+          } else if (feature.properties.proba >= 0.40 && feature.properties.proba <= 0.60) {
             return {color: paletteColors.THIRD_COLOR};
-          } else if (feature.properties.prob >= 0.60 && feature.properties.prob <= 0.80) {
+          } else if (feature.properties.proba >= 0.60 && feature.properties.proba <= 0.80) {
             return {color: paletteColors.FOUR_COLOR}; 
-          } else if (feature.properties.prob >= 0.80 && feature.properties.prob <= 1) {
+          } else if (feature.properties.proba >= 0.80 && feature.properties.proba <= 1) {
             return {color: paletteColors.FIVE_COLOR};
           }
       }
