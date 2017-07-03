@@ -25,7 +25,7 @@ function verMapa() {
 	if (!LOADER_MAPA_INSTANCE) {
 		showLoaderMapa();
 		LOADER_MAPA_INSTANCE = true;
-		setTimeout(closePopup, 2000);
+		setTimeout(closePopup, 1500);
 	} else {
 		closePopup();
 	}

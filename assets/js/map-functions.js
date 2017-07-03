@@ -1,11 +1,5 @@
 window.onload = function() {
-  /*
-  var bsAsButton = document.getElementById("bsasButton"),
-      rosarioButton = document.getElementById("rosarioButton"),
-      cordobaButton = document.getElementById("cordobaButton"),
-      corrientesButton = document.getElementById("corrientesButton"),
-      tucumanButton = document.getElementById("tucumanButton");
-  */
+
   var capaSatelite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmFjdW5kb2JheWxlIiwiYSI6ImNqMnpkNzR4ODAwNDIyd3BybHVxbXk3emEifQ.sVR0_Ckb1UjZ1OUTCaFPnw", {
       attribution: 'Imágenes de <a href="http://www.mapbox.com/">Mapbox</a>. Desarrollado por <a href="https://ar.linkedin.com/in/facundo-baylé-879076134" target="new">Facundo Baylé</a>',
   });
@@ -23,16 +17,6 @@ window.onload = function() {
     'FOUR_COLOR': '#e34a33',
     'FIVE_COLOR': '#b30000'
   };
-
-  /*
-  function _registerEvents() {
-    bsAsButton.addEventListener("click", centerLocalizationBuenosAires, false);
-    rosarioButton.addEventListener("click", centerLocalizationRosario, false);
-    cordobaButton.addEventListener("click", centerLocalizationCordoba, false);
-    corrientesButton.addEventListener("click", centerLocalizationCorrientes, false);
-    tucumanButton.addEventListener("click", centerLocalizationTucuman, false);
-  }
-  */
 
   var geoJsonLayer = new L.GeoJSON.AJAX("data.geojson", {
       style: function(feature) {
@@ -80,33 +64,6 @@ window.onload = function() {
     });
 
   });
-
-  /*
-  (function (){
-     _registerEvents();
-  }());
-
-  function centerLocalizationBuenosAires() {
-    map.setView(new L.LatLng(-34.614948, -58.439854), 11);
-  }
-
-  function centerLocalizationRosario() {
-    map.setView(new L.LatLng(-32.956605, -60.655932), 11);
-  }
-
-  function centerLocalizationCordoba() {
-    map.setView(new L.LatLng(-31.407402, -64.189548), 11);
-  }
-
-  function centerLocalizationCorrientes() {
-    map.setView(new L.LatLng(-27.480935, -58.876759), 11);
-  }
-
-  function centerLocalizationTucuman() {
-    map.setView(new L.LatLng(-26.824953, -65.223455), 11);
-  }
-  */
-
 }
 
 
