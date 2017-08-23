@@ -1,7 +1,7 @@
 window.onload = function() {
 
   var capaSatelite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmFjdW5kb2JheWxlIiwiYSI6ImNqMnpkNzR4ODAwNDIyd3BybHVxbXk3emEifQ.sVR0_Ckb1UjZ1OUTCaFPnw", {
-      attribution: 'Imágenes de <a href="http://www.mapbox.com/">Mapbox</a>. Desarrollado por <a href="https://ar.linkedin.com/in/facundo-baylé-879076134" target="new">Facundo Baylé</a>',
+      attribution: 'Imágenes de <a href="http://www.mapbox.com/">Mapbox</a>.',
   });
 
   var map = L.map('map', {
